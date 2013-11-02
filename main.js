@@ -4,5 +4,6 @@ $(document).ready(function(){
 		$.get("/contact",function(res){
 			console.log(res);
 		});
+		console.log("First.");
 	});
 });
