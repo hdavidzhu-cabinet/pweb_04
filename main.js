@@ -1,6 +1,8 @@
 $(document).ready(function(){
 	$(".sidelink").click(function(){
 		var page = $(this).attr("id");
-		console.log($.get("/contact"));
+		$.get("/contact",function(res){
+			console.log(res);
+		});
 	});
 });
