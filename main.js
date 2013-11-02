@@ -4,5 +4,6 @@ $(document).ready(function(){
 		$.get("/contact",function(res){
 			$(".mainblock").html(res);
 		});
+		return false;
 	});
 });
