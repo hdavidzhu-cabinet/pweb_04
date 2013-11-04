@@ -1,11 +1,9 @@
 $(document).ready(function(){
+	$(".mainblock").fadeIn("slow");
 	$(".sidelink").click(function(){
 		var page = $(this).attr("id");
 		$.get("/contact",function(res){
-			// $(".mainblock").html(res);
-			$(".mainblock").fadeIn(400,function(res){
-				$(this).html(res);
-			});
+			$(".hiddenblock").html(res);
 		});
 		return false;
 	});
